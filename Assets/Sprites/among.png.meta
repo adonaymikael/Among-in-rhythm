@@ -1,0 +1,604 @@
+fileFormatVersion: 2
+guid: 9590414a469af7a408ca30c3767afcfe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7347482184038858612
+    second: among_0
+  - first:
+      213: -8819790463589524776
+    second: among_1
+  - first:
+      213: -2964395202222471636
+    second: among_2
+  - first:
+      213: -3706669846163272006
+    second: among_3
+  - first:
+      213: 972991036385518991
+    second: among_4
+  - first:
+      213: 4113931865898687618
+    second: among_5
+  - first:
+      213: -3194353712192701680
+    second: among_6
+  - first:
+      213: -4114474594634578034
+    second: among_7
+  - first:
+      213: 543192454988877519
+    second: among_8
+  - first:
+      213: 4619333586727659683
+    second: among_9
+  - first:
+      213: -417385378537976336
+    second: among_10
+  - first:
+      213: 8320790628176279103
+    second: among_11
+  - first:
+      213: 4299660742493072942
+    second: among_12
+  - first:
+      213: -1481568458918986158
+    second: among_13
+  - first:
+      213: -8424139946779931568
+    second: among_14
+  - first:
+      213: 2833620099217836010
+    second: among_15
+  - first:
+      213: -4865301765750636797
+    second: among_0
+  - first:
+      213: -5412995090083672724
+    second: among_1
+  - first:
+      213: -9198683013904237943
+    second: among_2
+  - first:
+      213: -119353911484090631
+    second: among_3
+  - first:
+      213: 8457159226695951174
+    second: among_4
+  - first:
+      213: -3395724114500886875
+    second: among_5
+  - first:
+      213: -9081593727166726248
+    second: among_6
+  - first:
+      213: -6643419940524308032
+    second: among_7
+  - first:
+      213: -680492779238954211
+    second: among_8
+  - first:
+      213: -536635172258576486
+    second: among_9
+  - first:
+      213: 4162446582177574979
+    second: among_10
+  - first:
+      213: -3630902397224987016
+    second: among_11
+  - first:
+      213: 3599023789774791336
+    second: among_12
+  - first:
+      213: -8185962694307381561
+    second: among_13
+  - first:
+      213: -7006472515993197767
+    second: among_14
+  - first:
+      213: -7631652046252473930
+    second: among_15
+  - first:
+      213: 2840008027275732668
+    second: among_16
+  - first:
+      213: 3454325215825287400
+    second: among_17
+  - first:
+      213: 2515685587878916413
+    second: among_18
+  - first:
+      213: 8672767619609650968
+    second: among_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: among_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 56
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3a5f42d9fa7cb0800000000000000
+      internalID: -4865301765750636797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 57
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d01a415ad21e4b0800000000000000
+      internalID: -5412995090083672724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 56
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a71da1986b75080800000000000000
+      internalID: -9198683013904237943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 57
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6ff67ff38f75ef0800000000000000
+      internalID: -119353911484090631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 53
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643212c328ddd5570800000000000000
+      internalID: 8457159226695951174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 57
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae52ffb8e6ffd0d0800000000000000
+      internalID: -3395724114500886875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 56
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fbfc91f92b7f180800000000000000
+      internalID: -9081593727166726248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 56
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c94d4f23c4ddc3a0800000000000000
+      internalID: -6643419940524308032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_8
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 53
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b6e353c676e86f0800000000000000
+      internalID: -680492779238954211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 56
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970c8f672d7d88f0800000000000000
+      internalID: -536635172258576486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_10
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 55
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340bb37ec1bf3c930800000000000000
+      internalID: 4162446582177574979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_11
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 55
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8765a4fc1817c9dc0800000000000000
+      internalID: -3630902397224987016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_12
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 55
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2e4bf711d42f130800000000000000
+      internalID: 3599023789774791336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_13
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 56
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce7535fc4e956e80800000000000000
+      internalID: -8185962694307381561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_14
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 56
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93320bb5e5204ce90800000000000000
+      internalID: -7006472515993197767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_15
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 56
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b10dbde5ece61690800000000000000
+      internalID: -7631652046252473930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 13
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb62709f04cb96720800000000000000
+      internalID: 2840008027275732668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: among_17
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 13
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8d0f36b7a30ff20800000000000000
+      internalID: 3454325215825287400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

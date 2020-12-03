@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: 563a579a301ef79459e7d529d86562b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5497115943553918313
+    second: rhythm_0
+  - first:
+      213: -2088169240036250911
+    second: rhythm_1
+  - first:
+      213: 8574094290561708680
+    second: rhythm_2
+  - first:
+      213: -8289224330301283000
+    second: rhythm_3
+  - first:
+      213: -8049824095193415864
+    second: rhythm_4
+  - first:
+      213: 7599725121292091027
+    second: rhythm_5
+  - first:
+      213: -2258731499978929
+    second: rhythm_6
+  - first:
+      213: -1731188661076859688
+    second: rhythm_7
+  - first:
+      213: 4133680214688610805
+    second: rhythm_8
+  - first:
+      213: -4645864350186247788
+    second: rhythm_9
+  - first:
+      213: -6213378683580050027
+    second: rhythm_10
+  - first:
+      213: -8811401323880378081
+    second: rhythm_11
+  - first:
+      213: 4883750775409334401
+    second: rhythm_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rhythm_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1834
+        width: 248
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a155f9c2256b3b0800000000000000
+      internalID: -5497115943553918313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_1
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1819
+        width: 462
+        height: 207
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaedb8c3255503e0800000000000000
+      internalID: -2088169240036250911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1482
+        width: 246
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882b2ab645d4df670800000000000000
+      internalID: 8574094290561708680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_3
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1511
+        width: 482
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845edd8c362c6fc80800000000000000
+      internalID: -8289224330301283000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1130
+        width: 246
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fbd9d92a7494090800000000000000
+      internalID: -8049824095193415864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_5
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1266
+        width: 708
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e3a359bb5a77960800000000000000
+      internalID: 7599725121292091027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 809
+        width: 246
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ffc4712b9f7fff0800000000000000
+      internalID: -2258731499978929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_7
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 806
+        width: 2402
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d46451c51599f7e0800000000000000
+      internalID: -1731188661076859688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 446
+        width: 246
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9339b0148cd5930800000000000000
+      internalID: 4133680214688610805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_9
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 514
+        width: 2403
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4996f740df2968fb0800000000000000
+      internalID: -4645864350186247788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 114
+        width: 246
+        height: 246
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5951a36d105a5c9a0800000000000000
+      internalID: -6213378683580050027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_11
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 178
+        width: 2403
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1114b44e2d97b580800000000000000
+      internalID: -8811401323880378081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rhythm_12
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1825
+        width: 331
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188dfcb747196c340800000000000000
+      internalID: 4883750775409334401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
