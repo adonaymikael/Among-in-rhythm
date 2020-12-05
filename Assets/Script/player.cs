@@ -13,11 +13,13 @@ public class player : MonoBehaviour
     public LayerMask whatIsGround;
     public static float sitTimer;
     public float idleTimer;
-    public float moveSpeed = 5;
+    public float moveSpeed = 3;
     public float jumpForce = 0.1f;
     public float groundCheckRadius = 0.2f;
     public bool grounded;
-
+    public KeyCode KeyToStart;
+    public float h = 0;
+    public float beatTempo;
 
     // Start is called before the first frame update
     void Start()
@@ -27,14 +29,22 @@ public class player : MonoBehaviour
         playerSprite = playerComponents.GetComponent<SpriteRenderer>();
         playerRigid = playerComponents.GetComponent<Rigidbody2D>();
 
+        beatTempo = beatTempo / 60f;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyToStart)){
+            h = 1;
+        }
 
-        float h = Input.GetAxis("Horizontal");
-        playerRigid.velocity = new Vector2(h*moveSpeed, playerRigid.velocity.y);
+        // float h = Input.GetAxis("Horizontal");
+        
+        // Debug.Log(h);
+        // playerRigid.velocity = new Vector2(h*3, playerRigid.velocity.y);
+        playerRigid.velocity = new Vector2(h* beatTempo , playerRigid.velocity.y);
 
         AnimatorStateInfo animationState = playerAnimation.GetCurrentAnimatorStateInfo(0);
         AnimatorClipInfo[] myAnimatorClip = playerAnimation.GetCurrentAnimatorClipInfo(0);
