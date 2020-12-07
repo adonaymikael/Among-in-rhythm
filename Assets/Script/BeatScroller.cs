@@ -17,7 +17,7 @@ public class BeatScroller : MonoBehaviour{
         }
         else{
             //transform.position -= new Vector3(beatTempo * Time.deltaTime, 0f, 0f);
-            Debug.Log(Time.deltaTime);
+           // Debug.Log(Time.deltaTime);
         }
 
     }

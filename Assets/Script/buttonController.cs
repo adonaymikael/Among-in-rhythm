@@ -9,6 +9,8 @@ public class buttonController : MonoBehaviour {
     public Sprite perfectImage;
     public Sprite pressedImage;
     public KeyCode KeyToPress;
+    public GameObject Great;
+    public GameObject Perfect;
 
     void Start(){
         theSR = GetComponent<SpriteRenderer>();

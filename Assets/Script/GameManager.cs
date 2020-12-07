@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Text musictimeText;
     public Text pulseText;
     public Text scoreText;
+    public GameObject EnterGame;
     public Image Punctuation;
     private Image PunctuationSprite;
     public Sprite badSprite;
@@ -50,6 +51,8 @@ public class GameManager : MonoBehaviour
                 startPlaying = true;
                 theBS.hasStarted = true;
 
+                EnterGame.SetActive(false);
+
                 theMusic.Play();
             }
         }else{
@@ -60,14 +63,37 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void NoteHit(){
+    public void NoteHit(int NoteScore){
         Debug.Log("Hit On time");
+
+        if(NoteScore == 1){
         Punctuation.enabled = true;
         PunctuationSprite.sprite = perfectSprite;
-        myScore +=scorePerHit;
+        myScore +=scorePerHit; //100% da nota
         scoreText.text = ((int)myScore).ToString();
         scorePerText.text = "+"+((int)scorePerHit+1);
+        scorePerText.GetComponent<Animation>().Play();    
+        }
+
+        if(NoteScore == 2){
+        Punctuation.enabled = true;
+        PunctuationSprite.sprite = greatSprite;
+        myScore +=scorePerHit*0.75; //75% da nota
+        scoreText.text = ((int)myScore).ToString();
+        scorePerText.text = "+"+(int)((scorePerHit*0.75)+1);
         scorePerText.GetComponent<Animation>().Play();
+        }
+
+        if(NoteScore == 3){
+        Punctuation.enabled = true;
+        PunctuationSprite.sprite = goodSprite;
+        myScore +=scorePerHit*0.50; //50% da nota
+        scoreText.text = ((int)myScore).ToString();
+        scorePerText.text = "+"+(int)((scorePerHit*0.50)+1);
+        scorePerText.GetComponent<Animation>().Play();
+        }
+
+        //Debug.Log(NoteScore);
         if(scorePerText.GetComponent<Animation>().isPlaying){
             scorePerText.GetComponent<Animation>().Stop(); 
             scorePerText.GetComponent<Animation>().Play(); 

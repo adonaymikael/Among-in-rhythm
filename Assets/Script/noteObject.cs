@@ -8,9 +8,17 @@ public class noteObject : MonoBehaviour
     public bool canBePressed;
     private KeyCode keyButton;
     private buttonController buttonController;
+    private Collider2D GreatTrigger;
+    private Collider2D PerfectTrigger;
+    public int NoteScore;
     void Start()
     {
+        // NoteScore = 3: Good
+        // NoteScore = 2: Great
+        // NoteScore = 1: Perfect
         buttonController = button.GetComponent<buttonController>();
+        GreatTrigger = buttonController.Great.GetComponent<Collider2D>();
+        PerfectTrigger = buttonController.Perfect.GetComponent<Collider2D>();
         keyButton = buttonController.KeyToPress;
     }
 
@@ -20,7 +28,7 @@ public class noteObject : MonoBehaviour
         if(Input.GetKeyDown(keyButton)){
             if(canBePressed){
                 gameObject.SetActive(false);
-                GameManager.instance.NoteHit();
+                GameManager.instance.NoteHit(NoteScore);
             }
         }
     }
@@ -28,6 +36,16 @@ public class noteObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Button"){
             canBePressed = true;
+            NoteScore = 3;
+            //Debug.Log("Good");
+        }
+        if(other.tag == "Great"){
+            NoteScore = 2;
+                //Debug.Log("Great");
+        }
+        if(other.tag == "Perfect"){
+            NoteScore = 1;
+                //Debug.Log("Perfect");
         }
     }
 
@@ -35,6 +53,7 @@ public class noteObject : MonoBehaviour
         if(other.tag == "Button"){
             canBePressed = false;
             if(gameObject.activeSelf){
+                gameObject.SetActive(false);
                 GameManager.instance.NoteMissed();
             }
         }
