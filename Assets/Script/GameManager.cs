@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public Text pulseText;
     public Text scoreText;
     public GameObject EnterGame;
+    private Text textEnterGame;
     public GameObject heart_1;
     public GameObject heart_2;
     public GameObject heart_3;
@@ -36,15 +37,19 @@ public class GameManager : MonoBehaviour
     public int hp = 4;
     public Animator playerAnimation;
     public GameObject playerComponents;
+    public GameObject hand;
+    private Animator handAnimation;
 
     void Start(){
         instance = this;
+        textEnterGame = EnterGame.GetComponent<Text>();
         PunctuationSprite = Punctuation.GetComponent<Image>();
         NoteHolder = GameObject.FindGameObjectsWithTag("Note");
         sizeNoteHolder = NoteHolder.Length;
         scorePerHit = maxScore/(float)sizeNoteHolder;
         playerComponents = GameObject.FindGameObjectsWithTag("Player")[0];
         playerAnimation = playerComponents.GetComponent<Animator>();
+        handAnimation = hand.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -67,7 +72,14 @@ public class GameManager : MonoBehaviour
             }
         }else{
         pulse += theBS.beatTempo * Time.deltaTime;
-        pulseText.text = "Pulses: "+pulse; 
+
+        if(theMusic.isPlaying){
+            pulseText.text = "Pulses: "+pulse; 
+        }else{
+            pulseText.text = "Pulses: 0";
+            StartCoroutine(finished());
+        }
+        
         musictimeText.text = "Music Timer: "+(int)musicTime+"s";
         //Debug.Log(musicTime);
         }
@@ -77,7 +89,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Hit On time");
 
         playerAnimation.SetTrigger("fire_1");
-        
+        hand.SetActive(true);
+        handAnimation.SetTrigger("fire");
 
         if(NoteScore == 1){
         Punctuation.enabled = true;
@@ -132,6 +145,12 @@ public class GameManager : MonoBehaviour
 
     public void endAnimation(){
         Debug.Log("acabou2");
+    }
+
+    IEnumerator finished(){
+        yield return new WaitForSeconds(1);
+        textEnterGame.text = "Parabens!!!";
+        EnterGame.SetActive(true);
     }
 
 

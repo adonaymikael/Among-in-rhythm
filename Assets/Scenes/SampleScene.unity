@@ -871,6 +871,9 @@ MonoBehaviour:
   myScore: 0
   scorePerText: {fileID: 29047163}
   hp: 4
+  playerAnimation: {fileID: 0}
+  playerComponents: {fileID: 0}
+  hand: {fileID: 1449783631}
 --- !u!4 &329525879
 Transform:
   m_ObjectHideFlags: 0
@@ -1835,7 +1838,7 @@ MonoBehaviour:
   jumpForce: 500
   groundCheckRadius: 0.2
   grounded: 0
-  KeyToStart: 13
+  gameManager: {fileID: 329525878}
   h: 0
   beatTempo: 106
 --- !u!1 &618401036
@@ -9376,6 +9379,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393059520}
   m_CullTransparentMesh: 0
+--- !u!1 &1449783631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4715850585975816041, guid: bf731e937f54e494e8fdad89adf0dcdf,
+    type: 3}
+  m_PrefabInstance: {fileID: 4715850584747965794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1449783632
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449783631}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5fa68a2523a65704ca17a669e527c652, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1550248780
 GameObject:
   m_ObjectHideFlags: 0

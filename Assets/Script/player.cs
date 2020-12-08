@@ -17,9 +17,10 @@ public class player : MonoBehaviour
     public float jumpForce = 0.1f;
     public float groundCheckRadius = 0.2f;
     public bool grounded;
-    public KeyCode KeyToStart;
+    public GameManager gameManager;
     public float h = 0;
     public float beatTempo;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,15 +37,15 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyToStart)){
+        if(gameManager.startPlaying){
+            if(gameManager.theMusic.isPlaying){
             h = 1;
+            playerRigid.velocity = new Vector2(h* beatTempo , playerRigid.velocity.y);
+                
+            }else{  
+            StartCoroutine(finished());
+            }
         }
-
-        // float h = Input.GetAxis("Horizontal");
-        
-        // Debug.Log(h);
-        // playerRigid.velocity = new Vector2(h*3, playerRigid.velocity.y);
-        playerRigid.velocity = new Vector2(h* beatTempo , playerRigid.velocity.y);
 
         AnimatorStateInfo animationState = playerAnimation.GetCurrentAnimatorStateInfo(0);
         AnimatorClipInfo[] myAnimatorClip = playerAnimation.GetCurrentAnimatorClipInfo(0);
@@ -79,9 +80,16 @@ public class player : MonoBehaviour
         }
 
         //Debug.Log("Timer: "+idleTimer);
+
+        
     }
 
     void Flip(bool f){
        playerSprite.flipX = f;
+    }
+
+    IEnumerator finished(){
+        yield return new WaitForSeconds(1);
+        h = 0;
     }
 }
