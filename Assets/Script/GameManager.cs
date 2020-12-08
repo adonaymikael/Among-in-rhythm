@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     public Text scorePerText;
     private float pulse;
     public int hp = 4;
+    public Animator playerAnimation;
+    public GameObject playerComponents;
 
     void Start(){
         instance = this;
@@ -41,6 +43,8 @@ public class GameManager : MonoBehaviour
         NoteHolder = GameObject.FindGameObjectsWithTag("Note");
         sizeNoteHolder = NoteHolder.Length;
         scorePerHit = maxScore/(float)sizeNoteHolder;
+        playerComponents = GameObject.FindGameObjectsWithTag("Player")[0];
+        playerAnimation = playerComponents.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -71,6 +75,9 @@ public class GameManager : MonoBehaviour
 
     public void NoteHit(int NoteScore){
         Debug.Log("Hit On time");
+
+        playerAnimation.SetTrigger("fire_1");
+        
 
         if(NoteScore == 1){
         Punctuation.enabled = true;
