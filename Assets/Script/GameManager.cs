@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class GameManager : MonoBehaviour
     public Text pulseText;
     public Text scoreText;
     public GameObject EnterGame;
+    public GameObject heart_1;
+    public GameObject heart_2;
+    public GameObject heart_3;
+    public GameObject heart_4;
     public Image Punctuation;
     private Image PunctuationSprite;
     public Sprite badSprite;
@@ -28,6 +33,7 @@ public class GameManager : MonoBehaviour
     public double myScore =0;
     public Text scorePerText;
     private float pulse;
+    public int hp = 4;
 
     void Start(){
         instance = this;
@@ -52,7 +58,7 @@ public class GameManager : MonoBehaviour
                 theBS.hasStarted = true;
 
                 EnterGame.SetActive(false);
-
+                
                 theMusic.Play();
             }
         }else{
@@ -104,6 +110,17 @@ public class GameManager : MonoBehaviour
         Debug.Log("Missed Note");
         Punctuation.enabled = true;
         PunctuationSprite.sprite = badSprite;
+        hp -= 1;
+
+        if(hp <= 0){
+            SceneManager.LoadScene("GameOver");
+        } else if(hp == 3) {
+            heart_1.SetActive(false);
+        } else if(hp == 2) {
+            heart_2.SetActive(false);
+        } else if(hp == 1) {
+            heart_3.SetActive(false);
+        }
     }
 
     public void endAnimation(){
