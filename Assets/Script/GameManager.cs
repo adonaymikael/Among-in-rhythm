@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public Text pulseText;
     public Text scoreText;
     public GameObject EnterGame;
+    private Text textEnterGame;
     public GameObject heart_1;
     public GameObject heart_2;
     public GameObject heart_3;
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     void Start(){
         instance = this;
+        textEnterGame = EnterGame.GetComponent<Text>();
         PunctuationSprite = Punctuation.GetComponent<Image>();
         NoteHolder = GameObject.FindGameObjectsWithTag("Note");
         sizeNoteHolder = NoteHolder.Length;
@@ -63,7 +65,14 @@ public class GameManager : MonoBehaviour
             }
         }else{
         pulse += theBS.beatTempo * Time.deltaTime;
-        pulseText.text = "Pulses: "+pulse; 
+
+        if(theMusic.isPlaying){
+            pulseText.text = "Pulses: "+pulse; 
+        }else{
+            pulseText.text = "Pulses: 0";
+            StartCoroutine(finished());
+        }
+        
         musictimeText.text = "Music Timer: "+(int)musicTime+"s";
         //Debug.Log(musicTime);
         }
@@ -125,6 +134,12 @@ public class GameManager : MonoBehaviour
 
     public void endAnimation(){
         Debug.Log("acabou2");
+    }
+
+    IEnumerator finished(){
+        yield return new WaitForSeconds(1);
+        textEnterGame.text = "Parabens!!!";
+        EnterGame.SetActive(true);
     }
 
 

@@ -9,6 +9,7 @@ TagManager:
   - score
   - Great
   - Perfect
+  - NoteMenu
   layers:
   - Default
   - TransparentFX
