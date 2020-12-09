@@ -41,8 +41,12 @@ public class GameManager : MonoBehaviour
     public GameObject hand;
     private Animator handAnimation;
     private Transform handTrasform;
-
     private int HandRoationZ;
+    public GameObject restartButton;
+    public GameObject quitButton;
+    public GameObject button_1;
+    public GameObject button_2;
+    public GameObject button_3;
 
     void Start(){
         instance = this;
@@ -159,6 +163,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         textEnterGame.text = "Parabens!!!";
         EnterGame.SetActive(true);
+        restartButton.SetActive(true);
+        quitButton.SetActive(true);
+        button_1.SetActive(false);
+        button_2.SetActive(false);
+        button_3.SetActive(false);
     }
 
 
