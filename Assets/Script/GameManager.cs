@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public AudioSource theMusic;
     private GameObject[] NoteHolder;
-    public verifyAnimation verifyAnimation;
+    public verifyAnimation verifyScorePerHitAnimation;
+    public verifyAnimation verifyHandAnimation;
     public bool startPlaying;
     public BeatScroller theBS;
     public KeyCode KeyToStart;
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
     public Sprite greatSprite;
     public Sprite perfectSprite;
     public double maxScore = 999999.9;
-    private double scorePerHit;
+    public double scorePerHit;
     public double myScore =0;
     public Text scorePerText;
     private float pulse;
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
     public GameObject playerComponents;
     public GameObject hand;
     private Animator handAnimation;
+    private Transform handTrasform;
+    private int HandRoationZ;
     public GameObject restartButton;
     public GameObject quitButton;
     public GameObject button_1;
@@ -55,15 +58,22 @@ public class GameManager : MonoBehaviour
         playerComponents = GameObject.FindGameObjectsWithTag("Player")[0];
         playerAnimation = playerComponents.GetComponent<Animator>();
         handAnimation = hand.GetComponent<Animator>();
+        handTrasform = hand.GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update(){
         musicTime = theMusic.time;
-        if(verifyAnimation.endAnimation_scorePerHit){
+        if(verifyScorePerHitAnimation.endAnimation_scorePerHit){
             scorePerText.text = "";
-            verifyAnimation.endAnimation_scorePerHit = false;
+            verifyScorePerHitAnimation.endAnimation_scorePerHit = false;
             PunctuationSprite.enabled = false;
+        }
+
+        if(verifyHandAnimation.endAnimation_handFire){
+        handTrasform.Rotate(0 , 0, -HandRoationZ, Space.Self);
+        verifyHandAnimation.endAnimation_handFire = false;
+        hand.SetActive(false);
         }
 
         if(!startPlaying){
@@ -90,45 +100,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void NoteHit(int NoteScore){
+    public void NoteHit(int NoteScore,int ButtonY){
         Debug.Log("Hit On time");
 
-        playerAnimation.SetTrigger("fire_1");
-        hand.SetActive(true);
-        handAnimation.SetTrigger("fire");
+        switch (NoteScore){
+            case 1:
+            FireNote(perfectSprite,1,ButtonY); //1 = 100%; da nota
+            break;
 
-        if(NoteScore == 1){
-        Punctuation.enabled = true;
-        PunctuationSprite.sprite = perfectSprite;
-        myScore +=scorePerHit; //100% da nota
-        scoreText.text = ((int)myScore).ToString();
-        scorePerText.text = "+"+((int)scorePerHit+1);
-        scorePerText.GetComponent<Animation>().Play();    
+            case 2:
+            FireNote(greatSprite,0.75f,ButtonY); //0.75 = 75% da nota
+            break;
+
+            case 3:
+            FireNote(goodSprite,0.50f,ButtonY); //0.50 = 50% da nota
+            break;
         }
-
-        if(NoteScore == 2){
-        Punctuation.enabled = true;
-        PunctuationSprite.sprite = greatSprite;
-        myScore +=scorePerHit*0.75; //75% da nota
-        scoreText.text = ((int)myScore).ToString();
-        scorePerText.text = "+"+(int)((scorePerHit*0.75)+1);
-        scorePerText.GetComponent<Animation>().Play();
-        }
-
-        if(NoteScore == 3){
-        Punctuation.enabled = true;
-        PunctuationSprite.sprite = goodSprite;
-        myScore +=scorePerHit*0.50; //50% da nota
-        scoreText.text = ((int)myScore).ToString();
-        scorePerText.text = "+"+(int)((scorePerHit*0.50)+1);
-        scorePerText.GetComponent<Animation>().Play();
-        }
-
         //Debug.Log(NoteScore);
         if(scorePerText.GetComponent<Animation>().isPlaying){
             scorePerText.GetComponent<Animation>().Stop(); 
             scorePerText.GetComponent<Animation>().Play(); 
         }
+    }
+    public void FireNote(Sprite noteSprite, float PorcentPerHit, int HandRoationZ){
+        this.HandRoationZ = HandRoationZ;
+        playerAnimation.SetTrigger("fire_1");
+        hand.SetActive(true);
+        handAnimation.SetTrigger("fire");
+        handTrasform.Rotate(0 , 0, HandRoationZ, Space.World);
+
+        Punctuation.enabled = true;
+        PunctuationSprite.sprite = noteSprite;
+        myScore +=scorePerHit*PorcentPerHit;
+        scoreText.text = ((int)myScore).ToString();
+        scorePerText.text = "+"+(int)(scorePerHit*PorcentPerHit);
+        scorePerText.GetComponent<Animation>().Play();
+        
     }
 
     public void NoteMissed(){
@@ -149,7 +156,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void endAnimation(){
-        Debug.Log("acabou2");
+        
     }
 
     IEnumerator finished(){

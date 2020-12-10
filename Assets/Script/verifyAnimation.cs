@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class verifyAnimation : MonoBehaviour
 {
-    public bool endAnimation_scorePerHit;
+    public bool endAnimation_scorePerHit = false;
+    public bool endAnimation_handFire = false;
     void Start(){
         
     }
@@ -19,6 +20,10 @@ public class verifyAnimation : MonoBehaviour
         
         if(anim.name == "scorePerHit2"){
             endAnimation_scorePerHit = true;
+        }
+
+        if(anim.name == "hand_fire"){
+            endAnimation_handFire = true;
         }
         
     }

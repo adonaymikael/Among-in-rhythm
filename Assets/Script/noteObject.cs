@@ -11,6 +11,7 @@ public class noteObject : MonoBehaviour
     private Collider2D GreatTrigger;
     private Collider2D PerfectTrigger;
     public int NoteScore;
+    public int ButtonY;
     void Start()
     {
         // NoteScore = 3: Good
@@ -28,13 +29,31 @@ public class noteObject : MonoBehaviour
         if(Input.GetKeyDown(keyButton)){
             if(canBePressed){
                 gameObject.SetActive(false);
-                GameManager.instance.NoteHit(NoteScore);
+                GameManager.instance.NoteHit(NoteScore,ButtonY);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Button"){
+        var ButtonName = other.gameObject.name;
+        switch (ButtonName) {
+            case "button_1":
+            //Debug.Log("Em cima");
+            ButtonY = 50;
+            break;
+
+            case "button_2":
+            //Debug.Log("Meio");
+            ButtonY = 30;
+            break;
+
+            case "button_3":
+            //Debug.Log("Baixo");
+            ButtonY = 0;
+            break;
+        }
+
             canBePressed = true;
             NoteScore = 3;
             //Debug.Log("Good");
