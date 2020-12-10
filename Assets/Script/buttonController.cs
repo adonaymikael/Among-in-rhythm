@@ -11,6 +11,7 @@ public class buttonController : MonoBehaviour {
     public KeyCode KeyToPress;
     public GameObject Great;
     public GameObject Perfect;
+    private Collider2D PerfectTrigger;
 
     void Start(){
         theSR = GetComponent<SpriteRenderer>();
