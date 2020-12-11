@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Perfect : MonoBehaviour {
-    public GameObject rhythm_0;
+    public Sprite PerfectTime;
+    private SpriteRenderer ObjSpriteRender;
+    public static Sprite ObjSprite;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ObjSpriteRender = GetComponentInParent<SpriteRenderer>();
+        ObjSprite = ObjSpriteRender.sprite;
     }
 
     // Update is called once per frame
@@ -18,9 +21,9 @@ public class Perfect : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        rhythm_0.SetActive(true);
+        ObjSpriteRender.sprite = PerfectTime;
     }
     private void OnTriggerExit2D(Collider2D other) {
-        rhythm_0.SetActive(false);
+        ObjSpriteRender.sprite = ObjSprite;
     }
 }
